@@ -1,0 +1,7 @@
+Skeleton
+========
+
+What is Skeleton?
+-----------------
+
+

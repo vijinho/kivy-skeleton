@@ -1,0 +1,35 @@
+<MyButton@Button>:
+    halign: 'left'
+    markup: True
+    canvas.before:
+        BorderImage:
+            texture: self.background_image.texture
+            pos: self.pos
+            size: self.size
+
+<MyLabel@Label>
+    halign: 'left'
+    valign: 'middle'
+    text_size: self.width, None
+    height: self.texture_size[1]
+    markup: True
+
+<FormLabel@Label>
+    size_hint_y: None
+    size: (self.parent.width, '36dp')
+    text_size: self.parent.width, None
+    halign: 'left'
+    valign: 'middle'
+    markup: False
+
+<FormTextInput@TextInput>
+    size_hint_y: None
+    size: (self.parent.width, '36dp')
+    multiline: False
+    allow_copy: True
+    use_bubble: True
+
+<FormTextArea@FormTextInput>:
+    multiline: True
+    max_chars: 512
+

@@ -1,0 +1,24 @@
+<ActionBarMain@ActionBar>
+    pos_hint: {'top':1}
+    ActionView:
+        ActionPrevious:
+            with_previous: False
+            text: 'Skeleton'
+            on_press: app.root.current = 'Main'
+        ActionButton:
+            id: btn_settings
+            text: "Settings"
+            icon: 'assets/img/icons/settings.png'
+            on_press: app.open_settings()
+        ActionButton:
+            text: "Help"
+            icon: 'assets/img/icons/help.png'
+            on_press: app.help()
+        ActionButton:
+            text: "About"
+            icon: 'assets/img/icons/about.png'
+            on_press: app.about()
+        ActionButton:
+            icon: 'assets/img/icons/quit.png'
+            text: "Exit"
+            on_press: app.stop()

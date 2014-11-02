@@ -1,0 +1,15 @@
+include *.py
+include LICENSE
+include README.rst
+include data/*
+include assets/*
+include skeleton
+include *.ini
+include *.jpg
+include *.json
+include *.kv
+include *.png
+include *.sh
+include *.ttf
+include *.txt
+include *.rst

@@ -1,0 +1,3 @@
+title=Skeleton
+author=Vijay Mahrra
+orientation=portrait
